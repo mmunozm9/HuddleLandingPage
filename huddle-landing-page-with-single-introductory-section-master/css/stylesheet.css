@@ -1,0 +1,146 @@
+:root{
+    --white: #fff;
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+
+    --font-secondary:'Open Sans', sans-serif;
+    --font-primary: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: mandatory;
+}
+*,
+*::before, *::after{
+    box-sizing: inherit;
+}
+h1{
+    font-family: var(--font-primary);
+    color: var(--white);
+    font-size: 4rem
+}
+p{
+    font-family: var(--font-secondary);
+    color: var(--white);
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+}
+body{
+    background-color: var(--violet);
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -7rem; 
+    background-position-x:-10rem;
+    background-attachment: fixed;
+   
+}
+@media(max-width:375px){
+    body{
+        background-image: none;
+    }
+    h1{
+        font-size: 2.5rem;
+        padding: 2rem;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    p{
+        font-size: 1.5rem;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 0rem;
+        padding-top: 0;
+        margin-left: 0;
+    }
+}
+
+.main-icon-image{
+    margin-top: 4.5rem;
+    margin-bottom: 10rem;   
+}
+.container{
+    max-width: 125rem;
+    margin: 0 auto;  
+}
+.mockup-ilustration{
+    max-width: 60%;
+    margin-right: 5rem;
+    margin-top: .2rem;
+}
+
+.boton{
+    font-family: var(--font-primary);
+    color: var(--violet);
+    background-color: var(--white);
+    text-decoration: none;
+    height: 10rem;
+    width: 2rem;
+    padding: 3% 14%;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    text-shadow: 3rem;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48); 
+}
+.container-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+.icon-box{
+    width: 4.5%;
+    filter: invert(100%);
+    padding: 1rem;
+}
+.information{
+    display: flex;
+}
+
+@media(max-width:376px){
+    header,
+    main{
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: top;
+        background-attachment: fixed;
+        background-position: top;
+        
+        
+    }
+    .information{
+        flex-direction: column;
+    }
+    .main-icon-image{
+        max-width: 15rem;
+        margin-bottom: 7rem;
+        margin-top: 3rem;
+    }
+    .boton{
+        text-align: center;
+        flex-direction: column;
+        margin-left: 9.5rem;
+    }
+    .mockup-ilustration{
+        max-width: 30rem;
+        align-items: center;
+        margin-top: 0;
+        margin-right: 0;
+        
+    }
+    .container-footer{
+        justify-content: center;
+        margin-top: 6rem;
+    }
+    .icon-box{
+        width: 15%;
+    }
+    .main-icon-image,
+    .mockup-ilustration{
+        margin-left: 2.5rem;
+    }
+}
+
+
+
